@@ -1,8 +1,17 @@
 
 window.onload=function(){
+
+
+
+
     var boundaries=document.getElementsByClassName("boundary");
     reset();
     var status= document.getElementById("status").innerHTML;
+    var score=0;
+    win();
+    var timer;
+    var element= document.getElementById("timer");
+
 
 
 
@@ -12,6 +21,11 @@ window.onload=function(){
         for (let i=0; i<boundaries.length; i++){
            boundaries[i].addEventListener("mouseenter", lose);
         }
+        var ms=0;
+        timer=setInterval(() =>{
+            element.innerHTML=" Live Timer 00:00:"+ms;
+            ms++;},100)
+
     }
 
 
@@ -46,6 +60,7 @@ window.onload=function(){
         document.getElementById("status").innerHTML="You Won!";
         score+=5;
         document.getElementById("test").innerHTML="SCORE: "+ score ;
+    }
 
     
     
