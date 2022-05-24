@@ -18,6 +18,11 @@ window.onload=function(){
             document.getElementById("status").innerHTML="You Lost!";
         } 
     }
+
+    function reset(){
+        document.getElementById("start").addEventListener("mouseenter", resetColor);
+        }
+
     
 
 
