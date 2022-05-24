@@ -41,6 +41,12 @@ window.onload=function(){
     }
 
 
+
+    function won(){
+        document.getElementById("status").innerHTML="You Won!";
+        score+=5;
+        document.getElementById("test").innerHTML="SCORE: "+ score ;
+
     
     
 
