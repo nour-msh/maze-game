@@ -110,3 +110,12 @@ neighboring elements.  Necessary to avoid giving ids to the boundary divs
 	height: 150px;
 	width: 98px;
 }
+#test{
+	margin-left: 45%;
+	color: #ff8888;
+
+}
+#js_timer{
+	margin-left: 43%;
+	color: #ff8888;
+}
