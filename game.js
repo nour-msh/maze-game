@@ -1,6 +1,9 @@
 
 window.onload=function(){
     var boundaries=document.getElementsByClassName("boundary");
+    reset();
+    var status= document.getElementById("status").innerHTML;
+
 
 
 
@@ -31,6 +34,13 @@ window.onload=function(){
             document.getElementById("status").innerHTML=status;
         }
     }
+
+
+    function win(){
+        document.getElementById("end").addEventListener("mouseenter",won)
+    }
+
+
     
     
 
