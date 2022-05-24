@@ -34,6 +34,11 @@ window.onload=function(){
             boundaries[i].classList.add("youlose");
             document.getElementById("status").innerHTML="You Lost!";
         } 
+            score-=10;
+            document.getElementById("test").innerHTML="SCORE: "+ score;
+            clearInterval(timer);
+
+
     }
 
     function reset(){
@@ -60,12 +65,11 @@ window.onload=function(){
         document.getElementById("status").innerHTML="You Won!";
         score+=5;
         document.getElementById("test").innerHTML="SCORE: "+ score ;
+        clearInterval(timer);
+
     }
 
     
-    
-
-
 
     
 
