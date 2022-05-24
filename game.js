@@ -23,6 +23,15 @@ window.onload=function(){
         document.getElementById("start").addEventListener("mouseenter", resetColor);
         }
 
+
+
+    function resetColor(){
+        for (let i=0; i<boundaries.length; i++){
+            boundaries[i].classList.remove("youlose");
+            document.getElementById("status").innerHTML=status;
+        }
+    }
+    
     
 
 
